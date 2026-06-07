@@ -1,0 +1,600 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff; /* Babanın istediği tertemiz beyaz arka plan */
+    color: #2c2520; /* Beyazda rahat okunsun diye koyu füme/kahve yazı rengi */
+}
+
+/* Sabit Üst Menü (Navbar) */
+.navbar {
+    background-color: #ffffff; /* Üst menü de beyaz kalsın, bütünlük bozulmasın */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #dfb76c; /* Ma Enchanté'nin o asil gold çizgisi */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Altına hafif tatlı bir gölge */
+}
+
+.navbar .logo h2 {
+    color: #b3893e; /* Beyaz üstünde daha net görünen koyu gold */
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.navbar nav a {
+    color: #4a3f35; /* Koyu kahve tonlarında şık linkler */
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ff9f43; /* Üzerine gelince turuncu/gold ateşleme */
+}
+
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff; /* Babanın istediği tertemiz beyaz arka plan */
+    color: #2c2520; /* Beyazda rahat okunsun diye koyu füme/kahve yazı rengi */
+}
+
+/* Sabit Üst Menü (Navbar) */
+.navbar {
+    background-color: #ffffff; /* Üst menü de beyaz kalsın, bütünlük bozulmasın */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #dfb76c; /* Ma Enchanté'nin o asil gold çizgisi */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Altına hafif tatlı bir gölge */
+}
+
+.navbar .logo h2 {
+    color: #b3893e; /* Beyaz üstünde daha net görünen koyu gold */
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.navbar nav a {
+    color: #4a3f35; /* Koyu kahve tonlarında şık linkler */
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ff9f43; /* Üzerine gelince turuncu/gold ateşleme */
+}
+
+/* Büyük Karşılama Ekranı (Hero) */
+.hero {
+    height: 60vh; 
+    /* contain sayesinde burgerin ekmeği, köftesi, turşusu hiç kırpılmadan tam kare sığacak. 
+       Yanlardaki boşlukları da burgerin kendi koyu tonuyla kapattık ki sırıtmasın. */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('./image_7791c3.jpg') no-repeat center center/contain #110b07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: #ffffff; 
+    margin-bottom: 12px;
+    font-weight: 800; 
+    letter-spacing: 1px;
+    /* Resmi küçültüp netleştirdiğimiz için yazının burgerin üstüne binip okunmayı zorlaştırmasını önleyen gölge */
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9), 0px 4px 30px rgba(0, 0, 0, 1);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #f5f0eb; 
+    margin-bottom: 25px;
+    font-weight: 700; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    color: #ffffff; /* Senin burgerin o lüks, karanlık tonları üzerinde parlayan beyaz yazı */
+    margin-bottom: 12px;
+    font-weight: 800; 
+    letter-spacing: 1px;
+    /* Yazının o ekmeğin ve etin dokusu üzerinde jilet gibi okunması için arkasına gölge katmanı */
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9), 0px 4px 30px rgba(0, 0, 0, 1);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: #f5f0eb; 
+    margin-bottom: 25px;
+    font-weight: 700; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #1c140f; 
+    margin-bottom: 12px;
+    font-weight: 800; 
+    /* Resim netleştiği için yazının arkasına şık bir beyaz gölge attık, yazı şak diye öne çıkıyor */
+    text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.9), 0px 4px 20px rgba(255, 255, 255, 1);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #2c1e15; 
+    margin-bottom: 25px;
+    font-weight: 700; 
+    /* Alt başlığın da arkasını beyaz gölgeyle besledik ki resmin üstünde kaybolmasın */
+    text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.9);
+}
+
+
+.hero h1 {
+    font-size: 2.6rem;
+    color: #8c6216; /* Beyaz zeminde patlayan asil koyu gold */
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #4a3f35;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.buton {
+    display: inline-block;
+    background-color: #b3893e;
+    color: #ffffff;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.buton:hover {
+    background-color: #2c2520;
+    transform: translateY(-2px);
+}
+
+/* Hikayemiz Bölümü (Kimyager Ortaklar) */
+.hikaye-bolumu {
+    background-color: #fcfaf7; /* Hafif kırık krem beyazı, dükkan sıcaklığı versin diye */
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee3d5;
+}
+
+.hikaye-kapsayici {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hikaye-bolumu h3 {
+    color: #b3893e;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.hikaye-bolumu p {
+    color: #5c5043;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Menü Sayfa Yapısı */
+.menu-kapsayici {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-bolum {
+    margin-bottom: 60px;
+}
+
+.menu-bolum h3 {
+    font-size: 1.6rem;
+    color: #b3893e;
+    border-left: 5px solid #b3893e;
+    padding-left: 12px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Kartların Grid Yapısı */
+.urun-listesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tek Bir Ürün Kartı Tasarımı (Beyaz Mod) */
+.urun-kart {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eadecc; /* Çok tatlı hafif bir çerçeve çizdik */
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Kartlar havada lüks dursun */
+}
+
+.urun-kart:hover {
+    border-color: #b3893e;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(179, 137, 62, 0.15); /* Üzerine gelince parlasın */
+}
+
+/* Kart Resmi */
+.urun-resim {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eadecc;
+}
+
+/* İç Detaylar */
+.urun-detay {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.urun-detay h4 {
+    font-size: 1.2rem;
+    color: #2c2520;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+/* %100 Dana Döş İçindekiler Yazısı */
+.icindekiler {
+    color: #6e6053; /* Beyazda net okunan asil füme/kahve */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.fiyat {
+    color: #b3893e;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* İletişim Alanı (Alt Kısım) */
+.iletisim-alani {
+    background-color: #fcfaf7;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #dfb76c;
+}
+
+.iletisim-alani h3 {
+    color: #b3893e;
+    margin-bottom: 15px;
+}
+
+.iletisim-alani p {
+    margin-bottom: 8px;
+    color: #5c5043;
+    font-weight: 500;
+}
+
+/* Sipariş Butonu */
+.wp-buton {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.wp-buton:hover {
+    background-color: #1ebd58;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+}
+
+
+.hero h1 {
+    font-size: 2.6rem;
+    color: #8c6216; /* Beyaz zeminde patlayan asil koyu gold */
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #4a3f35;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.buton {
+    display: inline-block;
+    background-color: #b3893e;
+    color: #ffffff;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.buton:hover {
+    background-color: #2c2520;
+    transform: translateY(-2px);
+}
+
+/* Hikayemiz Bölümü (Kimyager Ortaklar) */
+.hikaye-bolumu {
+    background-color: #fcfaf7; /* Hafif kırık krem beyazı, dükkan sıcaklığı versin diye */
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee3d5;
+}
+
+.hikaye-kapsayici {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hikaye-bolumu h3 {
+    color: #b3893e;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.hikaye-bolumu p {
+    color: #5c5043;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Menü Sayfa Yapısı */
+.menu-kapsayici {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-bolum {
+    margin-bottom: 60px;
+}
+
+.menu-bolum h3 {
+    font-size: 1.6rem;
+    color: #b3893e;
+    border-left: 5px solid #b3893e;
+    padding-left: 12px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Kartların Grid Yapısı */
+.urun-listesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tek Bir Ürün Kartı Tasarımı (Beyaz Mod) */
+.urun-kart {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eadecc; /* Çok tatlı hafif bir çerçeve çizdik */
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Kartlar havada lüks dursun */
+}
+
+.urun-kart:hover {
+    border-color: #b3893e;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(179, 137, 62, 0.15); /* Üzerine gelince parlasın */
+}
+
+/* Kart Resmi */
+.urun-resim {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eadecc;
+}
+
+/* İç Detaylar */
+.urun-detay {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.urun-detay h4 {
+    font-size: 1.2rem;
+    color: #2c2520;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+/* %100 Dana Döş İçindekiler Yazısı */
+.icindekiler {
+    color: #6e6053; /* Beyazda net okunan asil füme/kahve */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.fiyat {
+    color: #b3893e;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* İletişim Alanı (Alt Kısım) */
+.iletisim-alani {
+    background-color: #fcfaf7;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #dfb76c;
+}
+
+.iletisim-alani h3 {
+    color: #b3893e;
+    margin-bottom: 15px;
+}
+
+.iletisim-alani p {
+    margin-bottom: 8px;
+    color: #5c5043;
+    font-weight: 500;
+}
+
+/* Sipariş Butonu */
+.wp-buton {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.wp-buton:hover {
+    background-color: #1ebd58;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+}
+/* İçecekler İçin Açılır Menü (Akordeon) Tasarımı */
+.icecek-akordeon {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.akordeon-grup {
+    margin-bottom: 15px;
+    border: 1px solid #eadecc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.akordeon-baslik {
+    background-color: #fcfaf7;
+    color: #2c2520;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.akordeon-baslik:after {
+    content: '➕'; /* Kapalıyken artı işareti dursun */
+    font-size: 0.9rem;
+    color: #b3893e;
+}
+
+.akordeon-baslik.active:after {
+    content: '➖'; /* Açılınca eksiye dönsün */
+}
+
+.akordeon-baslik:hover, .akordeon-baslik.active {
+    background-color: #b3893e;
+    color: #ffffff;
+}
+
+.akordeon-baslik.active:after {
+    color: #ffffff;
+}
+
+.akordeon-icerik {
+    padding: 0 20px;
+    background-color: #ffffff;
+    display: none; /* İlk açılışta gizli duracak, tıklayınca açılacak */
+    border-top: 1px solid #eadecc;
+}
+
+.ml-listesi {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.ml-listesi li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #f0e6da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4a3f35;
+    font-size: 1rem;
+}
+
+.ml-listesi li:last-child {
+    border-bottom: none;
+}
+
+.ml-bilgi {
+    color: #9c8a78;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
