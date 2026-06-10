@@ -4,14 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Enchanté Cafe & Bistro | Gurme Lezzetler</title>
+    
+    <!-- 🌟 SEKMEDE SOLDA DURACAK KÜÇÜK LOGO (FAVICON) -->
+    <link rel="icon" type="image/jpeg" href="maenchante.jpg">
+    
     <link rel="stylesheet" href="./style.css">
+
+    <!-- 📱 MOBİL KAYMA KORUMASI (CSS YAMASI) -->
+    <style>
+        /* Sol üstteki logonun düzgün durması için */
+        .navbar-logo {
+            height: 50px;
+            width: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        
+        /* Mobil Ekranlar İçin Özel Düzenleme (Kaymaları Önler) */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            .navbar nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+            .navbar nav a {
+                font-size: 0.85rem;
+                padding: 4px 8px;
+            }
+            .hero-icerik h1 {
+                font-size: 1.8rem !important;
+            }
+            .hero-icerik p {
+                font-size: 0.9rem !important;
+            }
+            /* Esnek "Gerçek Lezzet" kutularının mobilde taşmasını engeller */
+            .esnek-kart {
+                max-width: 100% !important;
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- ÜST MENÜ (NAVBAR) -->
     <header class="navbar">
         <div class="logo">
-            <h2>MA ENCHANTÉ</h2> 
+            <!-- 🌟 YAZI YERİNE ŞIK LOGOMUZ GELDİ -->
+            <a href="index.html">
+                <img src="maenchante.jpg" alt="Ma Enchanté Logo" class="navbar-logo">
+            </a>
         </div>
         <nav>
             <a href="#hikayemiz">Hikayemiz</a>
@@ -54,14 +103,14 @@
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
             
             <!-- SOL TARAF: SMASH BURGER -->
-            <div style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
+            <div class="esnek-kart" style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
                 <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=600" alt="Smash Burger" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
                 <h3 style="color: #fff; margin: 10px 0 5px 0; font-size: 1.3rem; letter-spacing: 1px;">SMASH BURGER</h3>
-                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin: 0;">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin: 0;">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ogv çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
             </div>
 
             <!-- SAĞ TARAF: PREMIUM ÇİKOLATA KUTUSU -->
-            <div style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
+            <div class="esnek-kart" style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
                 <img src="cikolats.jpg" alt="Ma Enchanté Özel El Yapımı Çikolata" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
                 <h3 style="color: #b3893e; margin: 10px 0 5px 0; font-size: 1.3rem; letter-spacing: 1px;">PREMIUM EL YAPIMI ÇİKOLATA</h3>
                 <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin: 0;">Belçika çikolatasıyla hazırlanan, içi laboratuvar hassasiyetinde özel sürpriz dolgularla harmanlanmış Ma Enchanté imza el yapımı çikolata kutusu.</p>
@@ -82,7 +131,7 @@
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Classic Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>CLASSIC BURGER</h4>
-                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, taze domates, çıtır kornişon turşu, iceberg marul, halka soğan ve şefin özel burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, taze domates, çıtır kornişon turşu, iceberg marul, halka soğan ogv şefin özel burger sosu. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -100,7 +149,7 @@
                     <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=600" alt="Smash Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>SMASH BURGER</h4>
-                        <p class="icindekiler">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ogv çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -109,7 +158,7 @@
                     <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=600" alt="Smoke Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>SMOKE BURGER</h4>
-                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, tütsülenmiş nefis dana füme, cheddar peyniri, karamelize soğan, barbekü sos ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, tütsülenmiş nefis dana füme, cheddar peyniri, karamelize soğan, barbekü sos ogv çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -144,7 +193,7 @@
                     <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=600" alt="Ma Enchanté Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>MA ENCHANTÉ BURGER</h4>
-                        <p class="icindekiler">Özel baharatlı kızarmış çıtır tavuk eti, dana füme, karamelize soğan, cheddar peyniri, kornişon turşu, iceberg marul ve şefin gizli burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Özel baharatlı kızarmış çıtır tavuk eti, dana füme, karamelize soğan, cheddar peyniri, kornişon turşu, iceberg marul ogv şefin gizli burger sosu. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -153,7 +202,7 @@
                     <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=600" alt="Meksika Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>MEKSİKA BURGER (ACILI)</h4>
-                        <p class="icindekiler">Baharatlı kızarmış tavuk eti, jalapeno biberi, acı sos, domates, marul ve çıtır soğan halkaları. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Baharatlı kızarmış tavuk eti, jalapeno biberi, acı sos, domates, marul ogv çıtır soğan halkaları. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -179,7 +228,7 @@
                     <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=600" alt="BBQ Wings" class="urun-resim">
                     <div class="urun-detay">
                         <h4>BBQ WINGS MENÜ</h4>
-                        <p class="icindekiler">Barbekü soslu özel marine edilmiş tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ve tortilla ekmeği eşliğinde.</p>
+                        <p class="icindekiler">Barbekü soslu özel marine edilmiş tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ogv tortilla ekmeği eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -188,7 +237,7 @@
                     <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=600" alt="Hot Wings" class="urun-resim">
                     <div class="urun-detay">
                         <h4>HOT WINGS MENÜ</h4>
-                        <p class="icindekiler">Özel acı soslu kızarmış tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ve sıcak tortilla ekmeği.</p>
+                        <p class="icindekiler">Özel acı soslu kızarmış tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ogv sıcak tortilla ekmeği.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -214,7 +263,7 @@
                     <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=600" alt="Dubai Cup" class="urun-resim">
                     <div class="urun-detay">
                         <h4>DUBAI CUP</h4>
-                        <p class="icindekiler">Orijinal Antep fıstığı ezmesiyle harmanlanmış çıtır kadayıf dolgusu ve yoğun akışkan eritilmiş Belçika çikolatası.</p>
+                        <p class="icindekiler">Orijinal Antep fıstığı ezmesiyle harmanlanmış çıtır kadayıf dolgusu ogv yoğun akışkan eritilmiş Belçika çikolatası.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -223,7 +272,7 @@
                     <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600" alt="Lotus Cup" class="urun-resim">
                     <div class="urun-detay">
                         <h4>LOTUS CUP</h4>
-                        <p class="icindekiler">Bütün Lotus bisküvisi, yoğun Lotus kreması, çıtır bisküvi kırıntıları ve özel yapım pastacı kreması katmanları.</p>
+                        <p class="icindekiler">Bütün Lotus bisküvisi, yoğun Lotus kreması, çıtır bisküvi kırıntıları ogv özel yapım pastacı kreması katmanları.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
