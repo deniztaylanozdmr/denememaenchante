@@ -3,99 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Enchanté - Dijital Menü</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #111111; /* Menülerin siyah ağırlığına tam uyum */
-            font-family: 'Arial', sans-serif;
-            color: #ffffff;
-        }
-        header {
-            text-align: center;
-            padding: 20px 10px;
-            background-color: #000000;
-            border-bottom: 2px solid #b3893e; /* Ma Enchanté Gold Çizgisi */
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-            letter-spacing: 2px;
-            color: #b3893e;
-        }
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 0.9rem;
-            color: #aaaaaa;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-        .menu-resim {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            border: 1px solid #222;
-        }
-        .bolum-baslik {
-            font-size: 1.2rem;
-            color: #b3893e;
-            margin: 20px 0 10px 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-left: 3px solid #b3893e;
-            padding-left: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 10px;
-            background-color: #000000;
-            color: #666666;
-            font-size: 0.85rem;
-            margin-top: 40px;
-            border-top: 1px solid #222;
-        }
-    </style>
+    <title>Ma Enchanté Cafe & Bistro | Gurme Lezzetler</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header>
-        <h1>MA ENCHANTÉ</h1>
-        <p>Cafe & Bistro • İstanbul</p>
+    <!-- ÜST MENÜ (NAVBAR) -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>MA ENCHANTÉ</h2> 
+        </div>
+        <nav>
+            <a href="#hikayemiz">Hikayemiz</a>
+            <a href="#et-burgerler">Et Burgerler</a>
+            <a href="#tavuk-burgerler">Tavuk Burgerler</a>
+            <a href="#wraplar-kanatlar">Wraplar & Kanatlar</a>
+            <a href="#tatlilar">Tatlılar</a>
+            <a href="#icecekler">İçecekler</a>
+        </nav>
     </header>
 
-    <div class="container">
+    <!-- ANA GİRİŞ ALANI (HERO) -->
+    <section class="hero">
+        <div class="hero-icerik">
+            <h1>Gerçek Lezzet, Sıcak Çikolata</h1>
+            <p>Özel reçeteli gurme burgerler ve Ma Enchanté'nin akışkan çikolata dünyası tek çatıda!</p>
+            <a href="#et-burgerler" class="buton">Menüyü İncele</a>
+        </div>
+    </section>
+
+    <!-- MARKA HİKAYEMİZ (KİMYAGER ORTAKLAR) -->
+    <section id="hikayemiz" class="hikaye-bolumu">
+        <div class="hikaye-kapsayici">
+            <h3>✨ Hikayemiz</h3>
+            <p>Laboratuvarda başlayan hikayemiz, çikolatanın kokusuna kapılınca bir tutkuya dönüştü. Kimyager ortakların elinden çıkan özel formüller, çikolatanın en akışkan ve en lezzetli halini sizlerle buluşturuyor.</p>
+            <p>İçeri girdiğiniz an sizi karşılayan o eşsiz koku, dükkanda geçireceğiniz her andan tat almanızı sağlayacak.</p>
+        </div>
+    </section>
+
+    <!-- MENÜ ALANI -->
+    <main class="menu-kapsayici">
         
-        <!-- 1. RESİM: ANA MENÜ -->
-        <div class="bolum-baslik">Yemekler & Tatlılar</div>
-        <img src="ana-menu.jpg" alt="Ma Enchanté Ana Menü" class="menu-resim">
+        <!-- 1. BÖLÜM: ET BURGERLER (%100 DANA DÖŞ) -->
+        <section id="et-burgerler" class="menu-bolum">
+            <h3>🍔 %100 DANA DÖŞ BURGERLER / PREMIUM MEAT BURGER</h3>
+            <div class="urun-listesi">
+                
+                <div class="urun-kart">
+                    <!-- Klasik Gurme Burger Görseli -->
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Classic Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>CLASSIC BURGER</h4>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, taze domates, çıtır kornişon turşu, iceberg marul, halka soğan ve şefin özel burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
 
-        <!-- 2. RESİM: SOĞUK İÇECEKLER -->
-        <div class="bolum-baslik">Soğuk İçecekler</div>
-        <img src="soguk-icecekler.jpg" alt="Soğuk İçecekler" class="menu-resim">
+                <div class="urun-kart">
+                    <!-- Bol Erimiş Cheddar Peynirli Görsel -->
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600" alt="Cheese Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>CHEESE BURGER</h4>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, erimiş nefis cheddar peyniri, marul, domates, kornişon turşu, soğan ve burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
 
-        <!-- 3. RESİM: ÇİKOLATALAR -->
-        <div class="bolum-baslik">Sıcak & Soğuk Çikolatalar</div>
-        <img src="cikolatalar.jpg" alt="Sıcak ve Soğuk Çikolatalar" class="menu-resim">
+                <div class="urun-kart">
+                    <!-- İki Katlı Basık Smash Burger Görseli -->
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=600" alt="Smash Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>SMASH BURGER</h4>
+                        <p class="icindekiler">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
 
-        <!-- 4. RESİM: HİKAYEMİZ (İstediğin gibi tam buraya, yani 4. sıraya koyduk) -->
-        <div class="bolum-baslik">Hikayemiz</div>
-        <img src="hikaye.png" alt="Ma Enchanté Hikayemiz" class="menu-resim">
+                <div class="urun-kart">
+                    <!-- Füme Etli ve Barbekülü İsli Burger Görseli -->
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=600" alt="Smoke Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>SMOKE BURGER</h4>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, tütsülenmiş nefis dana füme, cheddar peyniri, karamelize soğan, barbekü sos ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
 
-        <!-- 5. RESİM: ÇAY VE KAHVE -->
-        <div class="bolum-baslik">Çay & Kahve</div>
-        <img src="cay-kahve.jpg" alt="Çay ve Kahve Menüsü" class="menu-resim">
+            </div>
+        </section>
 
-    </div>
+        <!-- 2. BÖLÜM: TAVUK BURGERLER -->
+        <section id="tavuk-burgerler" class="menu-bolum">
+            <h3>🍗 TAVUK BURGERLER / CHICKEN BURGER</h3>
+            <div class="urun-listesi">
 
-    <footer>
-        <p>© 2026 Ma Enchanté. Tüm Hakları Saklıdır.</p>
+                <div class="urun-kart">
+                    <!-- Sade Çıtır Tavuk Görseli -->
+                    <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?q=80&w=600" alt="Hoppy Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>HOPPY BURGER</h4>
+                        <p class="icindekiler">Baharatlı kızarmış tavuk göğsü, domates, kornişon turşu, marul, özel mayonez sos. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Peynirli Tavuk Burger Görseli -->
+                    <img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=600" alt="Cheeseburger Chicken" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>CHEESEBURGER TAVUK</h4>
+                        <p class="icindekiler">Baharatlı kızarmış tavuk göğsü, marul, domates, karamelize soğan, taze cheddar peyniri, kornişon turşu, özel burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Ma Enchanté Özel Büyük İçi Dolu Tavuk Görseli -->
+                    <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=600" alt="Ma Enchanté Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>MA ENCHANTÉ BURGER</h4>
+                        <p class="icindekiler">Özel baharatlı kızarmış çıtır tavuk eti, dana füme, karamelize soğan, cheddar peyniri, kornişon turşu, iceberg marul ve şefin gizli burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Baharatlı Acılı Soslu Tavuk Görseli -->
+                    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=600" alt="Meksika Burger" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>MEKSİKA BURGER (ACILI)</h4>
+                        <p class="icindekiler">Baharatlı kızarmış tavuk eti, jalapeno biberi, acı sos, domates, marul ve çıtır soğan halkaları. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. BÖLÜM: WRAPLAR VE KANATLAR -->
+        <section id="wraplar-kanatlar" class="menu-bolum">
+            <h3>🌯 WRAPLAR & KANATLAR / MENU WITH AND WITHOUT BONE</h3>
+            <div class="urun-listesi">
+
+                <div class="urun-kart">
+                    <!-- Çıtır Tavuk Wrap Görseli -->
+                    <img src="https://images.unsplash.com/photo-1626700051175-6518c4793f06?q=80&w=600" alt="Wrap Menü" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>WRAP MENÜ</h4>
+                        <p class="icindekiler">Özel lavaş içerisinde çıtır tavuk parçaları, marul, kornişon turşu, domates ogv özel sos. Baharatlı patates kızartması eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Barbekü Soslu Parlak Kanat Görseli -->
+                    <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=600" alt="BBQ Wings" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>BBQ WINGS MENÜ</h4>
+                        <p class="icindekiler">Barbekü soslu özel marine edilmiş tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ve tortilla ekmeği eşliğinde.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Kırmızı Yoğun Acı Soslu Kanat Görseli -->
+                    <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=600" alt="Hot Wings" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>HOT WINGS MENÜ</h4>
+                        <p class="icindekiler">Özel acı soslu kızarmış tavuk kanatları, baharatlı patates kızartması, coleslaw salatası ve sıcak tortilla ekmeği.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Kemiksiz Çıtır Atıştırmalık Tavuk Parçaları (Tenders) Görseli -->
+                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=600" alt="Tenders Menü" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>TENDERS MENÜ (CLASSIC / HOT)</h4>
+                        <p class="icindekiler">Dışı çıtır, içi yumuşacık kemiksiz tavuk parçaları (İsteğe göre klasik veya acılı), baharatlı patates kızartması, coleslaw salatası ve tortilla.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. BÖLÜM: TATLILAR VE CUPLAR -->
+        <section id="tatlilar" class="menu-bolum">
+            <h3>🍫 EL YAPIMI BELÇİKA ÇİKOLATALI TATLILAR</h3>
+            <div class="urun-listesi">
+
+                <div class="urun-kart">
+                    <!-- Antep Fıstıklı Çikolatalı Dubai Cup Benzeri Görsel -->
+                    <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=600" alt="Dubai Cup" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>DUBAI CUP</h4>
+                        <p class="icindekiler">Orijinal Antep fıstığı ezmesiyle harmanlanmış çıtır kadayıf dolgusu ve yoğun akışkan eritilmiş Belçika çikolatası.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Bisküvili Karamel Kremalı Lotus Cup Görseli -->
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600" alt="Lotus Cup" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>LOTUS CUP</h4>
+                        <p class="icindekiler">Bütün Lotus bisküvisi, yoğun Lotus kreması, çıtır bisküvi kırıntıları ve özel yapım pastacı kreması katmanları.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Frambuaz / Çilek Soslu Premium Dilim Cheesecake Görseli -->
+                    <img src="https://images.unsplash.com/photo-1524351199679-46cddf530c04?q=80&w=600" alt="Cheesecake" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>PREMIUM CHEESECKE (FRAMBUAZ / LİMON)</h4>
+                        <p class="icindekiler">Altı çıtır bisküvi tabanlı, içi pürüzsüz fırınlanmış dolgulu, üzeri taze frambuaz sosu veya ekşi limon jeli kaplı dilim cheesecake.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+                <div class="urun-kart">
+                    <!-- Yoğun Akışkan Çikolatalı Pasta Görseli -->
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600" alt="Pastalar" class="urun-resim">
+                    <div class="urun-detay">
+                        <h4>İTALYAN TİRAMİSU & ÇİKOLATALI PASTA</h4>
+                        <p class="icindekiler">Kahve özütlü orijinal mascarpone kremalı Tiramisu veya kat kat yoğun çikolata ganajlı ıslak pasta çeşitleri.</p>
+                        <span class="fiyat">Fiyat Girin ₺</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- 5. BÖLÜM: İÇECEKLER -->
+        <section id="icecekler" class="menu-bolum">
+            <h3>☕ İÇECEK DÜNYASI / BEVERAGES (Seçmek İçin Başlıklara Tıklayın)</h3>
+            <div class="icecek-akordeon">
+
+                <!-- 1. KATEGORİ: ÇİKOLATALAR -->
+                <div class="akordeon-grup">
+                    <button class="akordeon-baslik">🍫 ÖZEL SICAK & SOĞUK ÇİKOLATA ÇEŞİTLERİ</button>
+                    <div class="akordeon-icerik">
+                        <ul class="ml-listesi">
+                            <li><strong>Sade Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Çilekli Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Muzlu Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Karamelli Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Fıstıklı Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Fındıklı Sıcak Çikolata</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Acılı Sıcak Çikolata (Chili)</strong> <span class="ml-bilgi">(250 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Soğuk Çikolata (Sade / Meyveli)</strong> <span class="ml-bilgi">(330 ml)</span> - Fiyat ₺</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. KATEGORİ: ÇAY & KAHVE -->
+                <div class="akordeon-grup">
+                    <button class="akordeon-baslik">☕ ÇAY & KAHVE KÜLTÜRÜ</button>
+                    <div class="akordeon-icerik">
+                        <ul class="ml-listesi">
+                            <li><strong>Demleme Türk Çayı</strong> <span class="ml-bilgi">(120 ml - İnce Belli)</span> - Fiyat ₺</li>
+                            <li><strong>Fincan Çay</strong> <span class="ml-bilgi">(200 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Türk Kahvesi (Tek)</strong> <span class="ml-bilgi">(70 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Türk Kahvesi (Double)</strong> <span class="ml-bilgi">(140 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Espresso (Single)</strong> <span class="ml-bilgi">(30 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Espresso (Double)</strong> <span class="ml-bilgi">(60 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Americano</strong> <span class="ml-bilgi">(300 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Filtre Kahve</strong> <span class="ml-bilgi">(300 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Cafe Latte</strong> <span class="ml-bilgi">(350 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Cappuccino</strong> <span class="ml-bilgi">(300 ml)</span> - Fiyat ₺</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. KATEGORİ: SOĞUK İÇECEKLER -->
+                <div class="akordeon-grup">
+                    <button class="akordeon-baslik">🥤 FERAHLATICI SOĞUK İÇECEKLER</button>
+                    <div class="akordeon-icerik">
+                        <ul class="ml-listesi">
+                            <li><strong>Alkolsüz Malt</strong> <span class="ml-bilgi">(330 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Coca-Cola (Klasik / Zero)</strong> <span class="ml-bilgi">(330 ml - Kutu)</span> - Fiyat ₺</li>
+                            <li><strong>Fanta / Sprite</strong> <span class="ml-bilgi">(330 ml - Kutu)</span> - Fiyat ₺</li>
+                            <li><strong>Ice Tea (Şeftali / Limon)</strong> <span class="ml-bilgi">(330 ml - Kutu)</span> - Fiyat ₺</li>
+                            <li><strong>Cool Lime</strong> <span class="ml-bilgi">(400 ml - Buzlu)</span> - Fiyat ₺</li>
+                            <li><strong>Berry Hibiscus</strong> <span class="ml-bilgi">(400 ml - Buzlu)</span> - Fiyat ₺</li>
+                            <li><strong>Taze Sıkılmış Portakal Suyu</strong> <span class="ml-bilgi">(300 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Maden Suyu (Soda)</strong> <span class="ml-bilgi">(200 ml)</span> - Fiyat ₺</li>
+                            <li><strong>Su</strong> <span class="ml-bilgi">(500 ml)</span> - Fiyat ₺</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tıklama İşlevini Çalıştıran Küçük Kod Parçası (JS) -->
+        <script>
+            document.querySelectorAll('.akordeon-baslik').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    button.classList.toggle('active');
+                    if (button.classList.contains('active')) {
+                        content.style.display = 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+
+    <!-- İLETİŞİM / SİPARİŞ ALT KISIM -->
+    <footer class="iletisim-alani">
+        <h3>📍 Ma Enchanté Cafe & Bistro</h3>
+        <p>Adres: ASMALI MESCİT MAHALLESİ İSTİKLAL CADDESİ, Emir Nevruz Sk. NO.2H, 34430 Beyoğlu/İstanbul</p>
+        <p>Telefon: 0553 778 58 24</p>
+        <a href="https://wa.me/905537785824?text=Merhaba,%20%20menunuzu%20gordum%20rezervasyon%20yaptırmak%20istiyorum." target="_blank" class="wp-buton">💚 WhatsApp'tan Hemen Rezervasyon Yap</a>
     </footer>
 
 </body>
