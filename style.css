@@ -597,4 +597,100 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     margin-left: 10px;
+/* ==========================================
+   📱 MOBİL VE TABLET UYUMLULUK AYARLARI (MEDIA QUERY)
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* Genel Kapsayıcı Ayarları */
+    body {
+        font-size: 14px; /* Mobilde yazılar hafif küçülsün ki sığsın */
+    }
+
+    /* Üst Menü (Navbar) Düzenlemesi */
+    .navbar {
+        flex-direction: column; /* Logo ve menü linkleri alt alta gelsin */
+        gap: 12px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-wrap: wrap; /* Linkler sığmazsa alt satıra geçsin, taşmasın */
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar nav a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        background: #141414; /* Mobilde buton gibi dursunlar, tıklaması kolay olsun */
+        border-radius: 4px;
+        border: 1px solid #222;
+    }
+
+    /* Ana Giriş Alanı (Hero) */
+    .hero {
+        padding: 60px 15px; /* Mobilde devasa boşlukları daraltıyoruz */
+        min-height: auto;
+    }
+
+    .hero-icerik h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+    }
+
+    .hero-icerik p {
+        font-size: 0.95rem !important;
+    }
+
+    /* Ürün Kartları Düzenlemesi (En Çok Kayma Yapabilecek Yer) */
+    .urun-listesi {
+        display: flex;
+        flex-direction: column; /* Yan yana duran kartları alt alta alıyoruz */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .urun-kart {
+        flex-direction: column; /* Kartın içindeki resim ve yazı yan yanaysa alt alta gelsin */
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .urun-resim {
+        width: 100% !important; /* Resim mobilde kartı tam kaplasın */
+        max-width: 300px;
+        height: 200px !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px; /* Altındaki yazıyla arasına boşluk */
+    }
+
+    .urun-detay {
+        width: 100%;
+    }
+
+    .urun-detay h4 {
+        font-size: 1.1rem;
+    }
+
+    .icindekiler {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    /* Alt Kısım (Footer) ve Butonlar */
+    .iletisim-alani {
+        padding: 30px 15px;
+    }
+
+    .wp-buton {
+        width: 100%; /* WhatsApp butonu mobilde ekranı kaplasın, basması kolay olsun */
+        box-sizing: border-box;
+        font-size: 0.9rem;
+    }
+}
 }
