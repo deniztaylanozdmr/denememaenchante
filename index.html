@@ -15,6 +15,7 @@
         </div>
         <nav>
             <a href="#hikayemiz">Hikayemiz</a>
+            <a href="menu.html" style="color: #b3893e; font-weight: bold;">📋 DİJİTAL MENÜ</a>
             <a href="#et-burgerler">Et Burgerler</a>
             <a href="#tavuk-burgerler">Tavuk Burgerler</a>
             <a href="#wraplar-kanatlar">Wraplar & Kanatlar</a>
@@ -28,7 +29,10 @@
         <div class="hero-icerik">
             <h1>Gerçek Lezzet, Sıcak Çikolata</h1>
             <p>Özel reçeteli gurme burgerler ve Ma Enchanté'nin akışkan çikolata dünyası tek çatıda!</p>
-            <a href="#et-burgerler" class="buton">Menüyü İncele</a>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+                <a href="#et-burgerler" class="buton">Menüyü İncele</a>
+                <a href="menu.html" class="buton" style="background: #b3893e; border-color: #b3893e;">Fiziksel Menüyü Gör 📋</a>
+            </div>
         </div>
     </section>
 
@@ -41,6 +45,31 @@
         </div>
     </section>
 
+    <!-- 🌟 GERÇEK LEZZET & ÖNE ÇIKANLAR (SMASH BURGER & PREMIUM ÇİKOLATA YAN YANA) -->
+    <section style="padding: 60px 15px; background: #0b0b0b; text-align: center; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;">
+        <h2 style="color: #b3893e; font-size: 1.8rem; margin-bottom: 10px; letter-spacing: 2px; text-transform: uppercase;">Gerçek Lezzeti Keşfedin</h2>
+        <p style="color: #888; max-width: 600px; margin: 0 auto 35px auto; font-size: 0.95rem;">Ma Enchanté mutfağından çıkan, en çok tercih edilen imza lezzetlerimiz.</p>
+        
+        <!-- Esnek Kart Kutusu -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
+            
+            <!-- SOL TARAF: SMASH BURGER -->
+            <div style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
+                <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=600" alt="Smash Burger" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h3 style="color: #fff; margin: 10px 0 5px 0; font-size: 1.3rem; letter-spacing: 1px;">SMASH BURGER</h3>
+                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin: 0;">Çift kat ezilmiş (Smash) gurme dana döş eti, çift kat cheddar peyniri, karamelize soğan, özel burger sosu ve çıtır kornişon turşu. Baharatlı patates kızartması eşliğinde.</p>
+            </div>
+
+            <!-- SAĞ TARAF: PREMIUM ÇİKOLATA KUTUSU -->
+            <div style="flex: 1; min-width: 280px; max-width: 450px; background: #141414; padding: 20px; border-radius: 12px; border: 1px solid #222; box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: left;">
+                <img src="cikolats.jpg" alt="Ma Enchanté Özel El Yapımı Çikolata" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h3 style="color: #b3893e; margin: 10px 0 5px 0; font-size: 1.3rem; letter-spacing: 1px;">PREMIUM EL YAPIMI ÇİKOLATA</h3>
+                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin: 0;">Belçika çikolatasıyla hazırlanan, içi laboratuvar hassasiyetinde özel sürpriz dolgularla harmanlanmış Ma Enchanté imza el yapımı çikolata kutusu.</p>
+            </div>
+
+        </div>
+    </section>
+
     <!-- MENÜ ALANI -->
     <main class="menu-kapsayici">
         
@@ -50,7 +79,6 @@
             <div class="urun-listesi">
                 
                 <div class="urun-kart">
-                    <!-- Klasik Gurme Burger Görseli -->
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Classic Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>CLASSIC BURGER</h4>
@@ -60,17 +88,15 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Bol Erimiş Cheddar Peynirli Görsel -->
                     <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600" alt="Cheese Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>CHEESE BURGER</h4>
-                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, erimiş nefis cheddar peyniri, marul, domates, kornişon turşu, soğan ve burger sosu. Baharatlı patates kızartması eşliğinde.</p>
+                        <p class="icindekiler">Özel reçeteli gurme dana döş eti, erimiş nefis cheddar peyniri, marul, domates, kornişon turşu, soğan ogv burger sosu. Baharatlı patates kızartması eşliğinde.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
 
                 <div class="urun-kart">
-                    <!-- İki Katlı Basık Smash Burger Görseli -->
                     <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=600" alt="Smash Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>SMASH BURGER</h4>
@@ -80,7 +106,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Füme Etli ve Barbekülü İsli Burger Görseli -->
                     <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=600" alt="Smoke Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>SMOKE BURGER</h4>
@@ -98,7 +123,6 @@
             <div class="urun-listesi">
 
                 <div class="urun-kart">
-                    <!-- Sade Çıtır Tavuk Görseli -->
                     <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?q=80&w=600" alt="Hoppy Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>HOPPY BURGER</h4>
@@ -108,7 +132,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Peynirli Tavuk Burger Görseli -->
                     <img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=600" alt="Cheeseburger Chicken" class="urun-resim">
                     <div class="urun-detay">
                         <h4>CHEESEBURGER TAVUK</h4>
@@ -118,7 +141,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Ma Enchanté Özel Büyük İçi Dolu Tavuk Görseli -->
                     <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=600" alt="Ma Enchanté Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>MA ENCHANTÉ BURGER</h4>
@@ -128,7 +150,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Baharatlı Acılı Soslu Tavuk Görseli -->
                     <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=600" alt="Meksika Burger" class="urun-resim">
                     <div class="urun-detay">
                         <h4>MEKSİKA BURGER (ACILI)</h4>
@@ -146,7 +167,6 @@
             <div class="urun-listesi">
 
                 <div class="urun-kart">
-                    <!-- Çıtır Tavuk Wrap Görseli -->
                     <img src="https://images.unsplash.com/photo-1626700051175-6518c4793f06?q=80&w=600" alt="Wrap Menü" class="urun-resim">
                     <div class="urun-detay">
                         <h4>WRAP MENÜ</h4>
@@ -156,7 +176,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Barbekü Soslu Parlak Kanat Görseli -->
                     <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=600" alt="BBQ Wings" class="urun-resim">
                     <div class="urun-detay">
                         <h4>BBQ WINGS MENÜ</h4>
@@ -166,7 +185,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Kırmızı Yoğun Acı Soslu Kanat Görseli -->
                     <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=600" alt="Hot Wings" class="urun-resim">
                     <div class="urun-detay">
                         <h4>HOT WINGS MENÜ</h4>
@@ -176,11 +194,10 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Kemiksiz Çıtır Atıştırmalık Tavuk Parçaları (Tenders) Görseli -->
                     <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=600" alt="Tenders Menü" class="urun-resim">
                     <div class="urun-detay">
                         <h4>TENDERS MENÜ (CLASSIC / HOT)</h4>
-                        <p class="icindekiler">Dışı çıtır, içi yumuşacık kemiksiz tavuk parçaları (İsteğe göre klasik veya acılı), baharatlı patates kızartması, coleslaw salatası ve tortilla.</p>
+                        <p class="icindekiler">Dışı çıtır, içi yumuşacık kemiksiz tavuk parçaları (İsteğe göre klasik veya acılı), baharatlı patates kızartması, coleslaw salatası ogv tortilla.</p>
                         <span class="fiyat">Fiyat Girin ₺</span>
                     </div>
                 </div>
@@ -194,7 +211,6 @@
             <div class="urun-listesi">
 
                 <div class="urun-kart">
-                    <!-- Antep Fıstıklı Çikolatalı Dubai Cup Benzeri Görsel -->
                     <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=600" alt="Dubai Cup" class="urun-resim">
                     <div class="urun-detay">
                         <h4>DUBAI CUP</h4>
@@ -204,7 +220,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Bisküvili Karamel Kremalı Lotus Cup Görseli -->
                     <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600" alt="Lotus Cup" class="urun-resim">
                     <div class="urun-detay">
                         <h4>LOTUS CUP</h4>
@@ -214,7 +229,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Frambuaz / Çilek Soslu Premium Dilim Cheesecake Görseli -->
                     <img src="https://images.unsplash.com/photo-1524351199679-46cddf530c04?q=80&w=600" alt="Cheesecake" class="urun-resim">
                     <div class="urun-detay">
                         <h4>PREMIUM CHEESECKE (FRAMBUAZ / LİMON)</h4>
@@ -224,7 +238,6 @@
                 </div>
 
                 <div class="urun-kart">
-                    <!-- Yoğun Akışkan Çikolatalı Pasta Görseli -->
                     <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600" alt="Pastalar" class="urun-resim">
                     <div class="urun-detay">
                         <h4>İTALYAN TİRAMİSU & ÇİKOLATALI PASTA</h4>
@@ -236,12 +249,11 @@
             </div>
         </section>
 
-    <!-- 5. BÖLÜM: İÇECEKLER -->
+        <!-- 5. BÖLÜM: İÇECEKLER -->
         <section id="icecekler" class="menu-bolum">
             <h3>☕ İÇECEK DÜNYASI / BEVERAGES (Seçmek İçin Başlıklara Tıklayın)</h3>
             <div class="icecek-akordeon">
 
-                <!-- 1. KATEGORİ: ÇİKOLATALAR -->
                 <div class="akordeon-grup">
                     <button class="akordeon-baslik">🍫 ÖZEL SICAK & SOĞUK ÇİKOLATA ÇEŞİTLERİ</button>
                     <div class="akordeon-icerik">
@@ -258,7 +270,6 @@
                     </div>
                 </div>
 
-                <!-- 2. KATEGORİ: ÇAY & KAHVE -->
                 <div class="akordeon-grup">
                     <button class="akordeon-baslik">☕ ÇAY & KAHVE KÜLTÜRÜ</button>
                     <div class="akordeon-icerik">
@@ -277,7 +288,6 @@
                     </div>
                 </div>
 
-                <!-- 3. KATEGORİ: SOĞUK İÇECEKLER -->
                 <div class="akordeon-grup">
                     <button class="akordeon-baslik">🥤 FERAHLATICI SOĞUK İÇECEKLER</button>
                     <div class="akordeon-icerik">
@@ -298,20 +308,22 @@
             </div>
         </section>
 
-        <!-- Tıklama İşlevini Çalıştıran Küçük Kod Parçası (JS) -->
-        <script>
-            document.querySelectorAll('.akordeon-baslik').forEach(button => {
-                button.addEventListener('click', () => {
-                    const content = button.nextElementSibling;
-                    button.classList.toggle('active');
-                    if (button.classList.contains('active')) {
-                        content.style.display = 'block';
-                    } else {
-                        content.style.display = 'none';
-                    }
-                });
+    </main>
+
+    <!-- Tıklama İşlevini Çalıştıran Küçük Kod Parçası (JS) -->
+    <script>
+        document.querySelectorAll('.akordeon-baslik').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
             });
-        </script>
+        });
+    </script>
 
     <!-- İLETİŞİM / SİPARİŞ ALT KISIM -->
     <footer class="iletisim-alani">
